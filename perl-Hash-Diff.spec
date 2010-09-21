@@ -1,6 +1,6 @@
 Name:           perl-Hash-Diff
 Version:        0.003
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Return difference between to hashes as a hash
 License:        GPL+ or Artistic
 Group:          Development/Libraries
@@ -18,7 +18,7 @@ Requires:       perl(Test::use::ok)
 %{?perl_default_filter}
 
 %description
-Hash::Diff returns the difference between to hashes as a hash.
+Hash::Diff returns the difference between two hashes as a hash.
 
 %prep
 %setup -q -n Hash-Diff-%{version}
