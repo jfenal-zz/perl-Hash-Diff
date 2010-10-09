@@ -1,11 +1,11 @@
 Name:           perl-Hash-Diff
-Version:        0.003
-Release:        3%{?dist}
+Version:        0.005
+Release:        1%{?dist}
 Summary:        Return difference between to hashes as a hash
 License:        GPL+ or Artistic
 Group:          Development/Libraries
 URL:            http://search.cpan.org/dist/Hash-Diff/
-Source0:        http://search.cpan.org/CPAN/authors/id/B/BO/BOLAV/Hash-Diff-0.003.tar.gz
+Source0:        http://search.cpan.org/CPAN/authors/id/B/BO/BOLAV/Hash-Diff-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 BuildRequires:  perl(ExtUtils::MakeMaker)
@@ -50,6 +50,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/Hash::Diff.3pm*
 
 %changelog
+* Sat Oct 9 2010 Jerome Fenal <jfenal@free.fr> 0.005-1
+- Rebase on upstream, which fixes only typos in pod.
 * Sat Sep 11 2010 Jerome Fenal <jfenal@free.fr> 0.003-2
 - Bump release number to overcome rpm generation issues for review ??
 * Wed Jul 14 2010 Jerome Fenal <jfenal@free.fr> 0.003-1
